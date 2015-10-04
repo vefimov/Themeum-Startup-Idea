@@ -1,0 +1,34 @@
+[24-Sep-2015 16:03:40 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'Could not determine which URL to request: Stripe\Event instance has invalid ID: ' in /home/filmfund/public_html/wp-content/plugins/themeum-startup-idea/payment/vendor/stripe/stripe-php/lib/ApiResource.php:75
+Stack trace:
+#0 /home/filmfund/public_html/wp-content/plugins/themeum-startup-idea/payment/vendor/stripe/stripe-php/lib/ApiResource.php(20): Stripe\ApiResource->instanceUrl()
+#1 /home/filmfund/public_html/wp-content/plugins/themeum-startup-idea/payment/vendor/stripe/stripe-php/lib/ApiResource.php(118): Stripe\ApiResource->refresh()
+#2 /home/filmfund/public_html/wp-content/plugins/themeum-startup-idea/payment/vendor/stripe/stripe-php/lib/Event.php(15): Stripe\ApiResource::_retrieve(NULL, NULL)
+#3 /home/filmfund/public_html/wp-content/plugins/themeum-startup-idea/payment/stripe-webhooks-receiver.php(16): Stripe\Event::retrieve(NULL)
+#4 {main}
+  thrown in /home/filmfund/public_html/wp-content/plugins/themeum-startup-idea/payment/vendor/stripe/stripe-php/lib/ApiResource.php on line 75
+[24-Sep-2015 16:11:06 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'Could not determine which URL to request: Stripe\Event instance has invalid ID: ' in /home/filmfund/public_html/wp-content/plugins/themeum-startup-idea/payment/vendor/stripe/stripe-php/lib/ApiResource.php:75
+Stack trace:
+#0 /home/filmfund/public_html/wp-content/plugins/themeum-startup-idea/payment/vendor/stripe/stripe-php/lib/ApiResource.php(20): Stripe\ApiResource->instanceUrl()
+#1 /home/filmfund/public_html/wp-content/plugins/themeum-startup-idea/payment/vendor/stripe/stripe-php/lib/ApiResource.php(118): Stripe\ApiResource->refresh()
+#2 /home/filmfund/public_html/wp-content/plugins/themeum-startup-idea/payment/vendor/stripe/stripe-php/lib/Event.php(15): Stripe\ApiResource::_retrieve(NULL, NULL)
+#3 /home/filmfund/public_html/wp-content/plugins/themeum-startup-idea/payment/stripe-webhooks-receiver.php(16): Stripe\Event::retrieve(NULL)
+#4 {main}
+  thrown in /home/filmfund/public_html/wp-content/plugins/themeum-startup-idea/payment/vendor/stripe/stripe-php/lib/ApiResource.php on line 75
+[01-Oct-2015 20:20:07 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'No such event: evt_16rDWyIT8zOUPfxkqrCatZ2m' in /home/filmfund/public_html/wp-content/plugins/themeum-startup-idea/payment/vendor/stripe/stripe-php/lib/ApiRequestor.php:98 from API request 'req_75OJ4K5lXkdO45'
+Stack trace:
+#0 /home/filmfund/public_html/wp-content/plugins/themeum-startup-idea/payment/vendor/stripe/stripe-php/lib/ApiRequestor.php(210): Stripe\ApiRequestor->handleApiError('{\n  "error": {\n...', 404, Array, Array)
+#1 /home/filmfund/public_html/wp-content/plugins/themeum-startup-idea/payment/vendor/stripe/stripe-php/lib/ApiRequestor.php(60): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 404, Array)
+#2 /home/filmfund/public_html/wp-content/plugins/themeum-startup-idea/payment/vendor/stripe/stripe-php/lib/ApiResource.php(27): Stripe\ApiRequestor->request('get', '/v1/events/evt_...', Array, Array)
+#3 /home/filmfund/public_html/wp-content/plugins/themeum-startup-idea/payment/vendor/stripe/stripe-php/lib/ApiResource.php(1 in /home/filmfund/public_html/wp-content/plugins/themeum-startup-idea/payment/vendor/stripe/stripe-php/lib/ApiRequestor.php on line 98
+[01-Oct-2015 20:20:08 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'No such event: evt_16rDWxIT8zOUPfxkIyFdu7LZ' in /home/filmfund/public_html/wp-content/plugins/themeum-startup-idea/payment/vendor/stripe/stripe-php/lib/ApiRequestor.php:98 from API request 'req_75OJWgqpQk8mB6'
+Stack trace:
+#0 /home/filmfund/public_html/wp-content/plugins/themeum-startup-idea/payment/vendor/stripe/stripe-php/lib/ApiRequestor.php(210): Stripe\ApiRequestor->handleApiError('{\n  "error": {\n...', 404, Array, Array)
+#1 /home/filmfund/public_html/wp-content/plugins/themeum-startup-idea/payment/vendor/stripe/stripe-php/lib/ApiRequestor.php(60): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 404, Array)
+#2 /home/filmfund/public_html/wp-content/plugins/themeum-startup-idea/payment/vendor/stripe/stripe-php/lib/ApiResource.php(27): Stripe\ApiRequestor->request('get', '/v1/events/evt_...', Array, Array)
+#3 /home/filmfund/public_html/wp-content/plugins/themeum-startup-idea/payment/vendor/stripe/stripe-php/lib/ApiResource.php(1 in /home/filmfund/public_html/wp-content/plugins/themeum-startup-idea/payment/vendor/stripe/stripe-php/lib/ApiRequestor.php on line 98
+[02-Oct-2015 05:44:48 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'No such event: evt_16rMLZIT8zOUPfxkLl67jFHK' in /home/filmfund/public_html/wp-content/plugins/themeum-startup-idea/payment/vendor/stripe/stripe-php/lib/ApiRequestor.php:98 from API request 'req_75XQHS2flZAjlR'
+Stack trace:
+#0 /home/filmfund/public_html/wp-content/plugins/themeum-startup-idea/payment/vendor/stripe/stripe-php/lib/ApiRequestor.php(210): Stripe\ApiRequestor->handleApiError('{\n  "error": {\n...', 404, Array, Array)
+#1 /home/filmfund/public_html/wp-content/plugins/themeum-startup-idea/payment/vendor/stripe/stripe-php/lib/ApiRequestor.php(60): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 404, Array)
+#2 /home/filmfund/public_html/wp-content/plugins/themeum-startup-idea/payment/vendor/stripe/stripe-php/lib/ApiResource.php(27): Stripe\ApiRequestor->request('get', '/v1/events/evt_...', Array, Array)
+#3 /home/filmfund/public_html/wp-content/plugins/themeum-startup-idea/payment/vendor/stripe/stripe-php/lib/ApiResource.php(1 in /home/filmfund/public_html/wp-content/plugins/themeum-startup-idea/payment/vendor/stripe/stripe-php/lib/ApiRequestor.php on line 98
